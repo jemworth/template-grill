@@ -1,0 +1,81 @@
+extends layout
+
+block content
+    #heading
+      .container
+        .row
+          .col-md-12
+            .heading-content
+              h2 Contact Us
+              span
+                | Home / 
+                a(href='contact-us.html') Contact Us    
+    #product-post
+      .container
+        .row
+          .col-md-12
+            .heading-section
+              h2 Feel free to send a message
+              img(src='images/under-heading.png', alt='')
+        #contact-us
+          .container
+            .row
+              .product-item.col-md-12
+                .row
+                  .col-md-8
+                    .message-form
+                      form.send-message(action='#', method='post')
+                        .row
+                          .name.col-md-4
+                            input#name(type='text', name='name', placeholder='Name')
+                          .email.col-md-4
+                            input#email(type='text', name='email', placeholder='Email')
+                          .subject.col-md-4
+                            input#subject(type='text', name='subject', placeholder='Subject')
+                        .row
+                          .text.col-md-12
+                            textarea(name='text', placeholder='Message', style='margin: 25px 0px 0px; width: 750px; height: 165px;')
+                        .send
+                          button(type='submit') Send
+                  .col-md-4
+                    .info
+                      p
+                        | Duis at pharetra neque, ut condimentum, purus nisl pretium quam, in pulvinar velit massa id elit.
+                      ul
+                        li
+                          i.fa.fa-phone
+                          | 090-080-0760
+                        li
+                          i.fa.fa-globe
+                          | 456 New Dagon City Studio, Yankinn, Digital Estate
+                        li
+                          i.fa.fa-envelope
+                          a(href='#') info@company.com
+        .row
+          .col-md-12
+            .heading-section
+              h2 Find Us On Map
+              img(src='images/under-heading.png', alt='')
+        .row
+          .col-md-12
+            #googleMap(style='height:340px;')
+    script(src='http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false')
+    script.
+      var map;
+      function initialize()
+      {
+      var map_options = {
+      center: new google.maps.LatLng(16.8496189,96.1288854),
+      zoom: 15,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), map_options);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+      google.maps.event.addDomListener(window, "resize", function()
+      {
+      var center = map.getCenter();
+      google.maps.event.trigger(map, "resize");
+      map.setCenter(center);
+      });
+

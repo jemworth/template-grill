@@ -1,0 +1,102 @@
+footer
+  .container
+    .top-footer
+      .row
+        .col-md-9
+          .subscribe-form
+            span Get in touch with us
+            form.subscribeForm(method='get')
+              input#subscribe(type='text')
+              input#submitButton(type='submit')
+        .col-md-3
+          .social-bottom
+            span Follow us:
+            ul
+              li
+                a.fa.fa-facebook(href='#')
+              li
+                a.fa.fa-twitter(href='#')
+              li
+                a.fa.fa-rss(href='#')
+    .main-footer
+      .row
+        .col-md-3
+          .about
+            h4.footer-title About Grill
+            p
+              | Grill is free HTML5 template by and it is a free responsive bootstrap layout that can be applied for any purpose.
+              br
+              br
+              | Credit goes to 
+              a(rel='nofollow', href='http://unsplash.com') Unsplash
+              |  for photos used in this template. Nam commodo erat quis ligula placerat viverra.
+        .col-md-3
+          .shop-list
+            h4.footer-title Shop Categories
+            ul
+              li
+                a(href='#')
+                  i.fa.fa-angle-right
+                  | New Grill Menu
+              li
+                a(href='#')
+                  i.fa.fa-angle-right
+                  | Healthy Fresh Juices
+              li
+                a(href='#')
+                  i.fa.fa-angle-right
+                  | Spicy Delicious Meals
+              li
+                a(href='#')
+                  i.fa.fa-angle-right
+                  | Simple Italian Pizzas
+              li
+                a(href='#')
+                  i.fa.fa-angle-right
+                  | Pure Good Yogurts
+              li
+                a(href='#')
+                  i.fa.fa-angle-right
+                  | Ice-cream for kids
+        .col-md-3
+          .recent-posts
+            h4.footer-title Recent posts
+            .recent-post
+              .recent-post-thumb
+                img(src='images/recent-post1.jpg', alt='')
+              .recent-post-info
+                h6
+                  a(href='#') Delicious and Healthy Menus
+                span 24/12/2084
+            .recent-post
+              .recent-post-thumb
+                img(src='images/recent-post2.jpg', alt='')
+              .recent-post-info
+                h6
+                  a(href='#') Simple and effective meals
+                span 18/12/2084
+        .col-md-3
+          .more-info
+            h4.footer-title More info
+            p
+              | Sed dignissim, diam id molestie faucibus, purus nisl pretium quam, in pulvinar velit massa id elit.
+            ul
+              li
+                i.fa.fa-phone
+                | 010-020-0340
+              li
+                i.fa.fa-globe
+                | 123 Dagon Studio, Yakin Street, Digital Estate
+              li
+                i.fa.fa-envelope
+                a(href='#') info@company.com
+    .bottom-footer
+      p
+        span
+          | Copyright © 2016 
+          a(href='/') Your Company
+!= js()
+script(src='js/vendor/jquery-1.11.0.min.js')
+script(src='js/vendor/jquery.gmap3.min.js')
+script(src='js/plugins.js')
+script(src='js/allcss.js')

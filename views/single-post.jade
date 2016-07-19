@@ -1,0 +1,182 @@
+extends layout
+
+block content
+    #heading
+      .container
+        .row
+          .col-md-12
+            .heading-content
+              h2 Single Product
+              span
+                | Home / 
+                a(href='single-post.html') Single Post
+    #product-post
+      .container
+        .row
+          .col-md-12
+            .heading-section
+              h2 Single Blog Post
+              img(src='images/under-heading.png', alt='')
+        #single-blog.page-section.first-section
+          .container
+            .row
+              .product-item.col-md-12
+                .row
+                  .col-md-8
+                    .image
+                      .image-post
+                        img(src='images/single-post.jpg', alt='')
+                    .product-content
+                      .product-title
+                        h3 ANOTHER MORNING BREAKFAST
+                        span.subtitle 4 comments
+                      p
+                        | Single blog post page is here for you. You can use this grill 
+                        a(href='#') template
+                        |  for any purpose. You do not need to give a credit to templatemo website for any reason. Praesent nec euismod ipsum, eget sodales enim. Duis in rhoncus lorem. Duis fermentum sem et libero viverra, in cursus velit dapibus. Donec dui ante, dapibus ut odio eget, vulputate blandit ante. Integer ullamcorper, augue id malesuada convallis, mauris risus cursus elit, eget scelerisque ipsum massa ac nisi. Donec venenatis vel arcu at pharetra. 
+                        a(href='#') Aenean
+                        |  a mauris augue. In egestas nisi turpis, et venenatis sapien ultrices eget. Nunc mattis nunc quis erat pretium tristique.
+                        br
+                        br
+                        |                                                     Mauris suscipit metus ullamcorper enim fringilla sagittis. Duis dui leo, mattis ac rhoncus eget, interdum a ipsum. Duis rutrum, justo et egestas feugiat, dui velit egestas velit, feugiat efficitur ante mauris eu ipsum. Aliquam quis sem vitae mi fringilla ornare eu quis orci. Fusce tellus sem, gravida a nunc eget, vehicula 
+                        a(href='#') commodo
+                        |  sapien.
+                    .divide-line
+                      img(src='images/div-line.png', alt='')
+                    .comments-title
+                      .comment-section
+                        h4 4 comments
+                    .all-comments
+                      .view-comments
+                        .comments
+                          .author-thumb
+                            img(src='images/author-comment1.jpg', alt='')
+                          .comment-body
+                            h6 Cindy Venna
+                            span.date 11 Sep 2084 - 12:25 PM
+                            a.hidden-xs(href='#') Reply
+                            p
+                              | Nulla ac elementum nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Donec rhoncus quam sit amet sodales finibus. Donec pellentesque non massa eu maximus. In non tellus id sem tempor gravida.
+                      .replyed-form
+                        .comments.replyed
+                          .author-thumb
+                            img(src='images/author-comment2.jpg', alt='')
+                          .comment-body
+                            h6 George Tanya
+                            span.date 12 Sep 2084 - 8:48 AM
+                            a.hidden-xs(href='#') Reply
+                            p
+                              | In pulvinar venenatis odio. Sed in ex sit amet ipsum posuere mollis. Nam nec risus feugiat dui ultrices dignissim. Morbi ex purus, commodo a tristique eu, mollis a nisi. Pellentesque in enim sit amet tellus ornare fringilla eget eu arcu.
+                      .view-comments
+                        .comments
+                          .author-thumb
+                            img(src='images/author-comment3.jpg', alt='')
+                          .comment-body
+                            h6 Brooker Aung
+                            span.date 12 Sep 2084 - 10:40 AM
+                            a.hidden-xs(href='#') Reply
+                            p
+                              | Duis rutrum, libero eu blandit gravida, massa orci cursus nisi, vehicula facilisis purus neque dignissim urna. Etiam molestie elementum elit at tempus. Suspendisse quis consectetur nisi, vitae consequat sem. In et quam id libero venenatis venenatis. Morbi vitae justo vulputate, auctor augue eu, pulvinar augue.
+                      .view-comments
+                        .comments
+                          .author-thumb
+                            img(src='images/author-comment4.jpg', alt='')
+                          .comment-body
+                            h6 Crystal Mya
+                            span.date 14 Sep 2084 - 05:16 PM
+                            a.hidden-xs(href='#') Reply
+                            p
+                              | Suspendisse vitae maximus nisl, non finibus ante. Suspendisse neque nisl, luctus ullamcorper erat a, fermentum mollis nibh. Aliquam vulputate augue vel metus suscipit euismod. Quisque id purus massa. Sed condimentum facilisis eros, ultrices tincidunt libero facilisis eget. Integer eget cursus velit.
+                    .divide-line
+                      img(src='images/div-line.png', alt='')
+                    .leave-comment
+                      .leave-one
+                        h4 Leave a comment
+                    .leave-form
+                      form.leave-comment(action='#', method='post')
+                        .row
+                          .name.col-md-4
+                            input#name(type='text', name='name', placeholder='Name')
+                          .email.col-md-4
+                            input#email(type='text', name='email', placeholder='Email')
+                          .subject.col-md-4
+                            input#subject(type='text', name='subject', placeholder='Subject')
+                        .row
+                          .text.col-md-12
+                            textarea(name='text', placeholder='Comment')
+                        .send
+                          button(type='submit') Send
+                  .col-md-3.col-md-offset-1
+                    .side-bar
+                      .news-letters
+                        h4 Archives
+                        .archives-list
+                          ul
+                            li
+                              a(href='#')
+                                i.fa.fa-angle-right
+                                | July (12)
+                            li
+                              a(href='#')
+                                i.fa.fa-angle-right
+                                | August (18)
+                            li
+                              a(href='#')
+                                i.fa.fa-angle-right
+                                | September (72)
+                            li
+                              a(href='#')
+                                i.fa.fa-angle-right
+                                | October (63)
+                            li
+                              a(href='#')
+                                i.fa.fa-angle-right
+                                | November (48))
+                            li
+                              a(href='#')
+                                i.fa.fa-angle-right
+                                | December (24)
+                      .recent-post
+                        h4 Recent Posts
+                        .posts
+                          .recent-post
+                            .recent-post-thumb
+                              img(src='images/recent-post1.jpg', alt='')
+                            .recent-post-info
+                              h6
+                                a(href='#') Vestibulum molestie odio sit amet
+                              span 24 Sep 2084
+                          .recent-post
+                            .recent-post-thumb
+                              img(src='images/recent-post2.jpg', alt='')
+                            .recent-post-info
+                              h6
+                                a(href='#') Vivamus mattis quam eget urna tincidunt
+                              span 22 Sep 2084
+                          .recent-post
+                            .recent-post-thumb
+                              img(src='images/recent-post3.jpg', alt='')
+                            .recent-post-info
+                              h6
+                                a(href='#') Curabitur in nunc eget neque posuere
+                              span 21 Sep 2084
+                      .advertisement
+                        h4 Flickr news
+                        .flickr-images
+                          .row
+                            .col-md-4.col-sm-2.col-xs-3
+                              img(src='images/flickr-image1.jpg', alt='')
+                            .col-md-4.col-sm-2.col-xs-3
+                              img(src='images/flickr-image2.jpg', alt='')
+                            .col-md-4.col-sm-2.col-xs-3
+                              img(src='images/flickr-image3.jpg', alt='')
+                            .col-md-4.col-sm-2.col-xs-3
+                              img(src='images/flickr-image4.jpg', alt='')
+                            .col-md-4.col-sm-2.col-xs-3
+                              img(src='images/flickr-image1.jpg', alt='')
+                            .col-md-4.col-sm-2.col-xs-3
+                              img(src='images/flickr-image2.jpg', alt='')
+                            .col-md-4.col-sm-2.col-xs-3
+                              img(src='images/flickr-image3.jpg', alt='')
+                            .col-md-4.col-sm-2.col-xs-3
+                              img(src='images/flickr-image4.jpg', alt='')

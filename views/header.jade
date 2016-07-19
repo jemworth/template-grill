@@ -1,0 +1,58 @@
+doctype html
+html
+
+  head
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='Template Grill', content='Template Grill')
+    meta(name='Jem Worth', content= "Jem Worth")
+    //- uncomment if your site is responsive!
+    //- meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= _path
+    link(rel='stylesheet', href='css/bootstrap.css')
+    link(rel='stylesheet', href='css/font-awesome.css')
+    link(rel='stylesheet', href='css/templatemo_style.css')
+    link(rel='stylesheet', href='css/templatemo_misc.css')
+    link(rel='stylesheet', href='css/flexslider.css')
+    link(rel='stylesheet', href='css/testimonails-slider.css')
+    script(src='js/vendor/modernizr-2.6.1-respond-1.1.0.min.js')
+    != css()
+    header
+      #top-header
+        .container
+          .row
+            .col-md-6
+              .home-account
+                a(href='/') Home
+                a(href='/') My account
+            .col-md-6
+              .cart-info
+                i.fa.fa-shopping-cart
+                |                                     (
+                a(href='/') 5 items
+                | ) in your cart (
+                a(href='/') $45.80
+                | )
+      #main-header
+        .container
+          .row
+            .col-md-3
+              .logo
+                a(href='/')
+                  img(src='images/logo.png', title='Grill Template', alt='Grill Website Template')
+            .col-md-6
+              .main-menu
+                ul
+                  li
+                    a(href='/') Home
+                  li
+                    a(href='about-us') About
+                  li
+                    a(href='products') Products
+                  li
+                    a(href='contact-us') Contact
+            .col-md-3
+              .search-box
+                form.search_form(name='search_form', method='get')
+                  input#search(type='text')
+                  input#search-button(type='submit')
